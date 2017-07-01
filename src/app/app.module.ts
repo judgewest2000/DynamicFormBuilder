@@ -7,6 +7,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { PersonFormGeneratorProvider } from '../providers/person-form-generator/person-form-generator';
+import { VehicleFormGeneratorProvider } from '../providers/vehicle-form-generator/vehicle-form-generator';
+import { AddressFormGeneratorProvider } from '../providers/address-form-generator/address-form-generator';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { PersonFormGeneratorProvider } from '../providers/person-form-generator/
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     
-    PersonFormGeneratorProvider
+    PersonFormGeneratorProvider,
+    VehicleFormGeneratorProvider,
+    AddressFormGeneratorProvider
   ]
 })
 export class AppModule {}
